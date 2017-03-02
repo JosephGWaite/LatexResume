@@ -1,13 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
+% Awesome CV LaTeX Template for Cover Letter
 %
 % This template has been downloaded from:
 % https://github.com/posquit0/Awesome-CV
 %
-% Author:
+% Authors:
 % Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
+% Lars Richter <mail@ayeks.de>
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -52,16 +52,16 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Joseph}{Waite}
-%\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
-\address{20 Sterling St, Hamilton, Ontario}
+%\photo[circle,noedge,left]{./examples/profile}
+\name{Joseph G.}{Waite}
+\position{McMaster University{\enskip\cdotp\enskip}Computer Science}
+\address{20 Sterling St, Hamilton, ON}
 
 \mobile{705 928-7395}
 \email{waitejg@mcmaster.ca}
-%\homepage{www.posquit0.com}
+\homepage{waite.io}
 \github{JosephGWaite}
-\linkedin{JosephWaite}
+\linkedin{JosephGWaite}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -70,6 +70,26 @@
 % \extrainfo{extra informations}
 
 %\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Resume}
 
 
 %-------------------------------------------------------------------------------
@@ -83,23 +103,32 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Joseph G. Waite~~~·~~~Résumé}
-  {\thepage}
+  {Joseph G. Waite~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+%%\lettersection{About Me}
+%opening paragraph. state why you are writing, how you learned of the organisation/ postions, and basic info about yourself 
+
+%%\lettersection{Why Google?}
+
+%2nd paragraph: Tell why you are interested in the employer or type of work the employer does (Simplystating that you are interested does not tell why, and can sound like a form letter). Demonstrate that you know enough about the employer or position to relate your background to the employer or position. Mention specific qualifications which make you a good fit for the employer’s needs. This is an opportunity to explain in more detail relevant items in your resume. Refer to the fact that your resume is enclosed. Mention other enclosures if such are required to apply for a position.
+
+%%\lettersection{Why Me?}
+
+%3rd paragraph: Indicate that you would like the opportunity to interview for a position or to talk with the employer to learn more about their opportunities or hiring plans. State what you will do to follow up, such as telephone the employer within two weeks. If you will be in the employer’s location and could offer to schedule a visit, indicate when. State that you would be glad to provide the employer with any additional information needed. Thank the employer for her/his consideration.
+\end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/experience.tex}
-%\input{resume/honors.tex}
-%\input{resume/presentation.tex}
-%\input{resume/writing.tex}
-%\input{resume/committees.tex}
-\input{resume/education.tex}
-\input{resume/extracurricular.tex}
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
 
-
-%-------------------------------------------------------------------------------
 \end{document}
